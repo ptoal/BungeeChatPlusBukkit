@@ -10,8 +10,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.scheduler.BukkitTask;
 
 import com.gmail.favorlock.bcpb.BungeeChatPlusBukkit;
+import com.gmail.favorlock.bcpb.tasks.PluginMessageTask;
 
 public class VaultListener implements Listener {
 	
@@ -50,7 +52,8 @@ public class VaultListener implements Listener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		player.sendPluginMessage(this.plugin, "BungeeChatPlus", bStream.toByteArray());
+		
+		BukkitTask task = new PluginMessageTask(this.plugin, player, bStream).runTaskLater(this.plugin, 1);
 	}
 
 }
