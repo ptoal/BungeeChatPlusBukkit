@@ -20,7 +20,6 @@ public class BungeeChatPlusBukkit extends JavaPlugin {
 		try {
 			config = new BungeeChatPlusBukkitConfig(this);
 			config.init();
-			getLogger().log(Level.INFO, "BCBP Info: " + config.Settings_VaultSupport + ", " + config.Settings_FactionServer);
 		} catch (Exception e) {
 			getLogger().log(Level.SEVERE, "Failed to load the config!", e);
 			disable();
