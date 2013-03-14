@@ -14,7 +14,6 @@ import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -22,9 +21,6 @@ import java.util.regex.PatternSyntaxException;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
-
-import com.dthielke.herochat.ChannelChatEvent;
-import com.dthielke.herochat.Chatter;
 
 public class RegexManager {
 	
