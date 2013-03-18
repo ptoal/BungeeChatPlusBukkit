@@ -2,5 +2,5 @@ name: BungeeChatPlusBukkit
 author:
   - Favorlock
 main: com.gmail.favorlock.bcpb.BungeeChatPlusBukkit
-version: 0.1.4
+version: 0.1.5
 softdepend: [Vault]
