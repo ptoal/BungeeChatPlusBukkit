@@ -34,6 +34,10 @@ public class FactionChatListener implements Listener {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			
+			if (plugin.getBCPConfig().Settings_EnableRegex) {
+				plugin.getRegexManager().filterChat(event);
+			}
 		
 			event.getPlayer().sendPluginMessage(this.plugin, "BungeeChatPlus", bStream.toByteArray());
 		}
