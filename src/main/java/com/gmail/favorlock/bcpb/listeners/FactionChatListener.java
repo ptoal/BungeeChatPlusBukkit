@@ -20,6 +20,9 @@ public class FactionChatListener implements Listener {
 	
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
+		if (plugin.getBCPConfig().Settings_CancelChatEvents) {
+			event.setCancelled(true);
+		}
 		if (!event.isCancelled()) {
 			Player player = event.getPlayer();
 			ByteArrayOutputStream bStream = new ByteArrayOutputStream();

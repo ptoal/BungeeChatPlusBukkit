@@ -17,6 +17,9 @@ public class ChatListener implements Listener {
 	
 	@EventHandler(priority = EventPriority.NORMAL)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
+		if (plugin.getBCPConfig().Settings_CancelChatEvents) {
+			event.setCancelled(true);
+		}
 		if (!event.isCancelled()) {	
 			if (plugin.getBCPConfig().Settings_EnableRegex) {
 				plugin.getRegexManager().filterChat(event);

@@ -16,5 +16,6 @@ public class BungeeChatPlusBukkitConfig extends Config {
 	public String Settings_Messages_kickmsg = "&4[&6BungeeChat+&4] &4Kicked by BungeeChat+!";
 	public boolean Settings_VaultSupport = true;
 	public boolean Settings_FactionServer = false;
+	public boolean Settings_CancelChatEvents = false;
 
 }
