@@ -39,6 +39,7 @@ public class BungeeChatPlusBukkit extends JavaPlugin {
 				registerListeners();
 			} else {
 				disable();
+				return;
 			}
 		}
 		
