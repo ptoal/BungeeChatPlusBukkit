@@ -17,5 +17,6 @@ public class BungeeChatPlusBukkitConfig extends Config {
 	public boolean Settings_VaultSupport = true;
 	public boolean Settings_FactionServer = false;
 	public boolean Settings_CancelChatEvents = false;
+	public boolean BroadcastToAllServers = false;
 
 }

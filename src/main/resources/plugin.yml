@@ -3,3 +3,9 @@ author: Favorlock
 main: com.gmail.favorlock.bcpb.BungeeChatPlusBukkit
 version: 0.1.7
 softdepend: [Vault]
+commands:
+  say:
+    description: test
+    usage: /<command> <message>
+    permission: bcpb.say
+    permission-message: You don't have <permission>
